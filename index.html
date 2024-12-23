@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Névnap Köszöntő</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Áldott Karácsonyt!</h1>		
+        <p>
+		<!--
+            Boldog névnapot, kedves Gyöngyi,<br>
+            Ne engedd, hogy szíved fájdalmad gyötörje,<br>
+            Tudom, a derekad most keservesen sajog,<br>
+            De hidd el, a mosolyod mint csillag, mindig ragyog!<br>
+            Pihenj, és lassan elmúlik a kín,<br>
+            Új erőre kapsz majd, mint a hajnali fény.<br>
+            Szívedben öröm, lelkedben derű,<br>
+            Ezt kívánom most neked, legbelül.<br>
+            Tudd, hogy a fájdalom csak múló vendég,<br>
+            és te maradsz, szép, okos és jó mind mindig mindörökké!
+		-->
+        </p>
+        <button onclick="playSong()">Karácsonyi dal lejátszása</button>
+        <audio id="song" src="Eljon_a_nap.mp3"></audio>
+    </div>
+
+    <script>
+        function playSong() {
+            const song = document.getElementById('song');
+            song.play();
+        }
+    </script>
+</body>
+</html>
